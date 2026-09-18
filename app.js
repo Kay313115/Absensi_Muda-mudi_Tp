@@ -1,5 +1,5 @@
 // ===== KONFIGURASI ANTI DOWN =====
-const URL_SHEET = "https://script.google.com/macros/s/AKfycbxU8y-TNoP0FgfVRZT_1mSXew7YkpHgMWSoPLYAvrujUntaHoCXoyWCbwv5u_FhIU5A/exec";
+const URL_SHEET = "https://script.google.com/macros/s/AKfycbxqxVtxuRPJKZ-PKwzSF6Ilc3rvNM-G81U_pIVEJj0M4uCV0fHi2H39YgBhSRTKtZo8/exec";
 
 const form = document.getElementById("formAbsen");
 const btn = document.getElementById("btn");
