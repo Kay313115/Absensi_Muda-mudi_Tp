@@ -23,7 +23,7 @@ form.onsubmit = (e) => {
   }
 
   // === 1. INSTANT SUKSES BIAR ORANG GAK KABUR ===
-  const dataKirim = { nama, kelompok, jenjang, status, keterangan, waktu: new Date().toLocaleString('id-ID') };
+ const dataKirim = { mode: "absen", nama, kelompok, jenjang, status, keterangan };
 
   pesan.style.color="green";
   pesan.innerText="✅ Berhasil! Absen " + nama + " masuk!";
