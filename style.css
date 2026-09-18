@@ -1,0 +1,71 @@
+/* * = semua elemen kena aturan ini */
+*{box-sizing:border-box; font-family:'Poppins',sans-serif}
+
+html,body{margin:0;padding:0;width:100%} /* reset biar gak ada jarak putih */
+
+body{
+  min-height:100dvh; /* dvh = tinggi layar HP yang bener, bukan 100vh yang kepotong */
+  display:grid; /* GRID lebih paten dari flex buat tengahin */
+  place-items:center; /* tengah atas-bawah + kiri-kanan sekaligus */
+  background:#0a1f16; /* ijo tua */
+  padding:20px; /* kasih jarak biar di HP gak nempel pinggir */
+  overflow-x:hidden; /* cegah geser kiri-kanan di HP */
+  position:relative;
+}
+
+/* Blob 1: buletan ijo neon blur kanan atas - pake vw biar nyesuain HP/Laptop */
+.bg-blob{
+  position:fixed; /* fixed biar gak ngikut scroll & gak bikin geser */
+  z-index:-1; /* taro di belakang kartu */
+  width:60vw; height:60vw; max-width:600px; max-height:600px; /* vw = persen layar, jadi di HP ngecilin otomatis */
+  background:radial-gradient(circle,#1ec558,#0f5a32);
+  filter:blur(90px); border-radius:50%; top:-10%; right:-15%;
+}
+
+/* Blob 2: kiri bawah */
+.bg-blob2{
+  position:fixed; z-index:-1;
+  width:50vw; height:50vw; max-width:400px; max-height:400px;
+  background:radial-gradient(circle,#00ffc8,#0d4b30);
+  filter:blur(100px); border-radius:50%; bottom:-10%; left:-15%;
+}
+
+/* Kartu putih utama - INI KUNCI BIAR TENGAH */
+.card{
+  width:100%; /* di HP ambil 100% */
+  max-width:390px; /* di laptop mentok 390px biar gak melar */
+  margin-inline:auto; /* KUNCI ANTI-CONDONG KIRI: paksa tengah otomatis */
+  background:rgba(255,255,255,.93);
+  backdrop-filter:blur(20px); /* efek kaca iPhone */
+  border-radius:26px; padding:30px;
+  box-shadow:0 25px 50px rgba(0,0,0,.4);
+}
+
+.header{text-align:center; margin-bottom:22px}
+.badge{background:#e8f5e9; color:#0d4a1f; font-size:10px; padding:5px 12px; border-radius:20px; font-weight:600}
+.header h1{margin:8px 0 0; font-size:28px; color:#0a1f16}
+.header p{margin:0; color:#666; font-size:12px}
+
+.input-group{
+  position:relative; margin-top:14px; display:flex; align-items:center;
+  background:#fff; border:1.5px solid #e0e0e0; border-radius:14px; padding:0 14px;
+  transition:.2s;
+}
+.input-group:focus-within{border-color:#1ed760; box-shadow:0 0 0 4px rgba(30,215,96,.15)}
+.input-group input,.input-group select{width:100%; border:none; outline:none; padding:15px 0; background:transparent; font-size:14px}
+
+button{
+  width:100%; margin-top:22px; padding:15px;
+  background:linear-gradient(135deg,#0d4a1f,#1ed760);
+  color:#fff; border:none; border-radius:14px; font-weight:600; font-size:15px; cursor:pointer;
+  box-shadow:0 10px 20px rgba(13,74,31,.35);
+}
+button:disabled{background:#999}
+#pesan{text-align:center; margin-top:16px; font-weight:600; font-size:13px; min-height:20px}
+
+/* KHUSUS HP KECIL biar pas */
+@media (max-width: 480px){
+  body{padding:16px} /* jarak pinggir dikecilin di HP */
+  .card{padding:20px; border-radius:22px} /* kartu agak tipis di HP */
+  .header h1{font-size:22px} /* judul dikecilin biar muat */
+}

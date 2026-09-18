@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Teluk Pucung</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-blob"></div>
+    <div class="bg-blob2"></div>
+    <div class="card">
+        <div class="header">
+            <span class="badge">🕌 OFFICIAL DESA</span>
+            <h1>Teluk Pucung</h1>
+            <p>Absensi Muda-Mudi Teluk Pucung</p>
+        </div>
+        <form id="formAbsen">
+            <div class="input-group">
+                <span>👤</span>
+                <input type="text" id="nama" maxlength="30" placeholder="Nama Lengkap" required>
+            </div>
+            <div class="input-group">
+                <span>👥</span>
+                <select id="kelompok" required>
+                    <option value="">Pilih Kelompok</option>
+                    <option>Kelompok 1</option>
+                    <option>Kelompok 2</option>
+                    <option>Kelompok 3</option>
+                    <option>Kelompok 4</option>
+                    <option>Kelompok 5</option>
+                </select>
+            </div>
+            <!-- TAMBAHAN BARU JENJANG -->
+            <div class="input-group">
+                <span>🎓</span>
+                <select id="jenjang" required>
+                    <option value="">Pilih Jenjang</option>
+                    <option>SMP</option>
+                    <option>SMA/SMK</option>
+                    <option>Usia Mandiri</option>
+                </select>
+            </div>
+            <div class="input-group"><span>📍</span><select id="status" required>
+                    <option value="">Pilih Status</option>
+                    <option>Hadir</option>
+                    <option>Izin</option>
+                </select></div>
+            <div class="input-group"><span>📝</span><input type="text" id="keterangan" maxlength="50" placeholder="Keterangan (izin)"></div>
+            <button id="btn">Kirim Absen </button>
+            
+        </form>
+        <p id="pesan"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
