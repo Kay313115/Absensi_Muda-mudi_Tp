@@ -1,4 +1,4 @@
-const URL_SHEET = "https://script.google.com/macros/s/AKfycbxqxVtxuRPJKZ-PKwzSF6Ilc3rvNM-G81U_pIVEJj0M4uCV0fHi2H39YgBhSRTKtZo8/exec";
+const URL_SHEET = "https://script.google.com/macros/s/AKfycbyi05BZC9pUEgO6lXjs0rnoxQqd1tdZDSXmdoZKXNgF2mYAXa1TfyN2NxDpnIhjpK3q/exec";
 const form = document.getElementById("formAbsen");
 const btn = document.getElementById("btn");
 const pesan = document.getElementById("pesan");
