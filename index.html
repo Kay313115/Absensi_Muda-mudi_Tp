@@ -17,39 +17,26 @@
             <p>Absensi Muda-Mudi Teluk Pucung</p>
         </div>
         <form id="formAbsen">
-            <div class="input-group">
-                <span>👤</span>
-                <input type="text" id="nama" maxlength="30" placeholder="Nama Lengkap" required>
-            </div>
-            <div class="input-group">
-                <span>👥</span>
-                <select id="kelompok" required>
+            <div class="input-group"><span>👤</span><input type="text" id="nama" maxlength="30" placeholder="Nama Lengkap" required></div>
+            <div class="input-group"><span>👥</span><select id="kelompok" required>
                     <option value="">Pilih Kelompok</option>
-                    <option>Kelompok 1</option>
-                    <option>Kelompok 2</option>
-                    <option>Kelompok 3</option>
-                    <option>Kelompok 4</option>
-                    <option>Kelompok 5</option>
-                </select>
-            </div>
-            <!-- TAMBAHAN BARU JENJANG -->
-            <div class="input-group">
-                <span>🎓</span>
-                <select id="jenjang" required>
+                    <option>Kelompok 1</option><option>Kelompok 2</option><option>Kelompok 3</option><option>Kelompok 4</option><option>Kelompok 5</option>
+                </select></div>
+            <div class="input-group"><span>🎓</span><select id="jenjang" required>
                     <option value="">Pilih Jenjang</option>
-                    <option>SMP</option>
-                    <option>SMA/SMK</option>
-                    <option>Usia Mandiri</option>
-                </select>
-            </div>
+                    <option>SMP</option><option>SMA/SMK</option><option>Usia Mandiri</option>
+                </select></div>
+            <!-- TAMBAHAN JENIS KELAMIN -->
+            <div class="input-group"><span>🚻</span><select id="jk" required>
+                    <option value="">Pilih Jenis Kelamin</option>
+                    <option>Laki-laki</option><option>Perempuan</option>
+                </select></div>
             <div class="input-group"><span>📍</span><select id="status" required>
                     <option value="">Pilih Status</option>
-                    <option>Hadir</option>
-                    <option>Izin</option>
+                    <option>Hadir</option><option>Izin</option>
                 </select></div>
             <div class="input-group"><span>📝</span><input type="text" id="keterangan" maxlength="50" placeholder="Keterangan (izin)"></div>
-            <button id="btn">Kirim Absen </button>
-            
+            <button id="btn">Kirim Absen</button>
         </form>
         <p id="pesan"></p>
     </div>
