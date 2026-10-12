@@ -3,43 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Absensi Teluk Pucung</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Absensi Muda Mudi Teluk Pucung</title>
+   <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-blob"></div>
-    <div class="bg-blob2"></div>
-    <div class="card">
+    <div class="bg-blob"></div> 
+    <div class="bg-blob2"></div> 
+
+    <div class="card"> 
         <div class="header">
             <span class="badge">🕌 OFFICIAL DESA</span>
             <h1>Teluk Pucung</h1>
             <p>Absensi Muda-Mudi Teluk Pucung</p>
         </div>
+
         <form id="formAbsen">
-            <div class="input-group"><span>👤</span><input type="text" id="nama" maxlength="30" placeholder="Nama Lengkap" required></div>
-            <div class="input-group"><span>👥</span><select id="kelompok" required>
+            
+            <div class="input-group">
+                <span>👥</span>
+                <select id="kelompok" required>
                     <option value=""> Kelompok</option>
-                    <option>Kelompok 1</option><option>Kelompok 2</option><option>Kelompok 3</option><option>Kelompok 4</option><option>Kelompok 5</option>
-                </select></div>
-            <div class="input-group"><span>🎓</span><select id="jenjang" required>
+                    <option value="Kelompok 1">Kelompok 1</option>
+                    <option value="Kelompok 2">Kelompok 2</option>
+                    <option value="Kelompok 3">Kelompok 3</option>
+                    <option value="Kelompok 4">Kelompok 4</option>
+                    <option value="Kelompok 5">Kelompok 5</option>
+                </select>
+            </div>
+
+            
+            <div class="input-group">
+                <span>👤</span>
+                <select id="nama" required disabled> <!-- disabled dulu sampe pilih kelompok -->
+                    <option value=""> Nama </option>
+                </select>
+            </div>
+
+            
+            <div class="input-group">
+                <span>🎓</span>
+                <select id="jenjang" required>
                     <option value=""> Jenjang</option>
                     <option>SMP</option><option>SMA/SMK</option><option>Usia Mandiri</option>
-                </select></div>
-            <!-- TAMBAHAN JENIS KELAMIN -->
-            <div class="input-group"><span>🚻</span><select id="jk" required>
+                </select>
+            </div>
+
+            
+            <div class="input-group">
+                <span>🚻</span>
+                <select id="jk" required>
                     <option value=""> Jenis Kelamin</option>
                     <option>Laki-laki</option><option>Perempuan</option>
-                </select></div>
-            <div class="input-group"><span>📍</span><select id="status" required>
+                </select>
+            </div>
+
+           
+            <div class="input-group">
+                <span>📍</span>
+                <select id="status" required>
                     <option value=""> Status</option>
-                    <option>Hadir</option><option>Izin</option>
-                </select></div>
-            <div class="input-group"><span>📝</span><input type="text" id="keterangan" maxlength="50" placeholder="Keterangan (izin)"></div>
-            <button id="btn">Kirim Absen</button>
+                    <option>Hadir</option>
+                    <option>Izin</option>
+                    <option>Tanpa Keterangan</option>
+                </select>
+            </div>
+
+           
+            <div class="input-group" id="boxKeterangan">
+                <span>📝</span>
+                <input type="text" id="keterangan" maxlength="50" placeholder="Keterangan di isi jika (izin)">
+            </div>
+
+            <button id="btn">Kirim Absen</button> <!-- tombol kirim -->
         </form>
-        <p id="pesan"></p>
+        <p id="pesan"></p> <!-- psan suskse or eror -->
     </div>
-    <script src="app.js"></script>
+
+    <script src="app.js"></script>  
 </body>
 </html>
