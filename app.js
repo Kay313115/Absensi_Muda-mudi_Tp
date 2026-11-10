@@ -19,7 +19,7 @@ const dataNama = {
     "Diaz Azis R", "Diva Aulia S", "Fatah Sabila R", "Frisca Berliyana N",
     "Hendri Wijaya A", "Laluna Putri N", "M Agung Nugroho", "M Dimas", "M Fadly",
     "M Faqih Restu D", "M Naufal A", "M Sofyan", "Nadia Dwianna", "Nadilla Rahma T",
-    "Nazhifa Resti A", "Nisrina Shifa K", "Riky Hermawan", "Sabila Wahyu L", "Sipul", 
+    "Nazhifa Resti A", "Nisrina Shifa K", "Riky Hermawan", "Sabila Wahyu L", "Saipul", 
     "Sakha Abi Manyu", "Syifa Audistiani N",
   ],
   "Kelompok 2": ["Aghni Putri Aulia S", "Agung Risqiawan", "Andika Daffa A", "Andreas Fatah Villanova",
